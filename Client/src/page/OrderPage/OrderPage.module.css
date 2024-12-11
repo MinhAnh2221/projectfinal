@@ -1,0 +1,167 @@
+/* OrderList.module.css */
+.container {
+  padding: 20px;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #1f2937;
+}
+
+.tableWrapper {
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  min-width: 1000px;
+  border-collapse: collapse;
+}
+
+.table th {
+  background-color: #f9fafb;
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table td {
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: top;
+}
+
+.table tr:hover {
+  background-color: #f9fafb;
+}
+
+.orderId {
+  font-weight: 500;
+  color: #2563eb;
+}
+
+.customerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.customerName {
+  font-weight: 500;
+}
+
+.customerAddress {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.date {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.itemRow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.itemImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.itemDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.itemName {
+  font-weight: 500;
+}
+
+.itemQuantity {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.total {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.status {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.pending {
+  background-color: #fff7e6;
+  color: #b45309;
+}
+
+.success, .delivered {
+  background-color: #ecfdf5;
+  color: #065f46;
+}
+
+.failed {
+  background-color: #fef2f2;
+  color: #b91c1c;
+}
+
+@media (max-width: 1024px) {
+  .table {
+    font-size: 14px;
+  }
+  
+  .table td, .table th {
+    padding: 12px;
+  }
+  
+  .itemImage {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Custom scrollbar for items list */
+.itemsList::-webkit-scrollbar {
+  width: 4px;
+}
+
+.itemsList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.itemsList::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2px;
+}
+
+.itemsList::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
